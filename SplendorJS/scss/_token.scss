@@ -1,0 +1,20 @@
+$token-border-size: 6px;
+
+.token {
+  $token-size: 70px;
+  $token-line-height: 2;
+
+  width: $token-size;
+  height: $token-size;
+  border-radius: $token-size / 2;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  .token-symbol {
+    i {
+      font-size: $token-size / $token-line-height - $token-border-size;
+      line-height: $token-line-height;
+      top: 0;
+    }
+  }
+}

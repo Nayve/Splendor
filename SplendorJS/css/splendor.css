@@ -1,0 +1,183 @@
+@charset "UTF-8";
+body {
+  color: #fff;
+  background-color: #252830; }
+
+.row {
+  padding: 10px 0; }
+
+.splendoricon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.card {
+  width: 175px;
+  height: 245px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block; }
+
+.cards-stack {
+  width: 175px; }
+  .cards-stack .card:nth-child(1) {
+    position: absolute;
+    top: 40px;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-3deg); }
+  .cards-stack .card:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(3deg); }
+  .cards-stack .card:nth-child(3) {
+    position: absolute;
+    top: 120px;
+    -webkit-backface-visibility: hidden;
+    -ms-transform: rotate(7deg);
+    /* IE 9 */
+    -webkit-transform: rotate(7deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-3deg); }
+  .cards-stack .card:last-child {
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(0deg); }
+
+.card-heading {
+  height: 40px;
+  padding: 5px 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+  .card-heading .card-value {
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+    float: left; }
+  .card-heading .card-symbol {
+    float: right; }
+    .card-heading .card-symbol i {
+      font-size: 23.0769230769px;
+      line-height: 1.3; }
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px; }
+
+.card-rank {
+  float: right; }
+  .card-rank:after {
+    font-size: 37px;
+    line-height: 1.1; }
+
+.rank-one .card-rank:after {
+  content: "°"; }
+
+.rank-two .card-rank:after {
+  content: "°°"; }
+
+.rank-three .card-rank:after {
+  content: "°°°"; }
+
+.token {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block; }
+  .token .token-symbol i {
+    font-size: 29px;
+    line-height: 2;
+    top: 0; }
+
+.symbol-white {
+  background-color: white; }
+  .symbol-white .card-heading {
+    background-color: #cfd2da; }
+  .symbol-white.token {
+    background-color: #cfd2da;
+    border: 6px solid #b9babd; }
+  .symbol-white .splendoricon:before {
+    content: ""; }
+  .symbol-white .card-rank {
+    color: #cfd2da; }
+
+.symbol-blue {
+  background-color: #b6e4f6; }
+  .symbol-blue .card-heading {
+    background-color: #1ca8dd; }
+  .symbol-blue.token {
+    background-color: #1ca8dd;
+    border: 6px solid #2081a6; }
+  .symbol-blue .splendoricon:before {
+    content: ""; }
+  .symbol-blue .card-rank {
+    color: #1ca8dd; }
+
+.symbol-green {
+  background-color: #a4f3d8; }
+  .symbol-green .card-heading {
+    background-color: #1bc98e; }
+  .symbol-green.token {
+    background-color: #1bc98e;
+    border: 6px solid #1e936b; }
+  .symbol-green .splendoricon:before {
+    content: ""; }
+  .symbol-green .card-rank {
+    color: #1bc98e; }
+
+.symbol-red {
+  background-color: #fbe4e7; }
+  .symbol-red .card-heading {
+    background-color: #e64759; }
+  .symbol-red.token {
+    background-color: #e64759;
+    border: 6px solid #d02a3d; }
+  .symbol-red .splendoricon:before {
+    content: ""; }
+  .symbol-red .card-rank {
+    color: #e64759; }
+
+.symbol-brown {
+  background-color: #ece9f7; }
+  .symbol-brown .card-heading {
+    background-color: #7964ca; }
+  .symbol-brown.token {
+    background-color: #7964ca;
+    border: 6px solid #614dae; }
+  .symbol-brown .splendoricon:before {
+    content: ""; }
+  .symbol-brown .card-rank {
+    color: #7964ca; }
+
+.symbol-gold {
+  background-color: #f9f7d3; }
+  .symbol-gold .card-heading {
+    background-color: #e4d836; }
+  .symbol-gold.token {
+    background-color: #e4d836;
+    border: 6px solid #c0b627; }
+  .symbol-gold .splendoricon:before {
+    content: ""; }
+  .symbol-gold .card-rank {
+    color: #e4d836; }

@@ -1,0 +1,58 @@
+@mixin symbol-mixin($bg-color, $icon-code) {
+  $dark-bg-color: desaturate(darken($bg-color, 10%), 10%);
+  $lighter-bg-color: lighten($bg-color, 35%);
+
+  background-color: $lighter-bg-color;
+  .card-heading {
+    background-color: $bg-color;
+  }
+  &.token {
+    background-color: $bg-color;
+    border: $token-border-size solid desaturate(darken($bg-color, 10%), 10%);
+  }
+  .splendoricon:before {
+    content: $icon-code;
+  }
+  .card-rank {
+    color: $bg-color;
+  }
+  //.card-stacked + .card-stacked, .card-stacked + .card {
+  //  border-top: 1px solid $dark-bg-color;
+  //}
+}
+
+.symbol-white {
+  $bg-color:    #cfd2da;
+  $icon-code:   "\e162";
+  @include symbol-mixin($bg-color, $icon-code);
+}
+
+.symbol-blue {
+  $bg-color:     #1ca8dd;
+  $icon-code:    "\e064";
+  @include symbol-mixin($bg-color, $icon-code);
+}
+
+.symbol-green {
+  $bg-color:    #1bc98e;
+  $icon-code:   "\e103";
+  @include symbol-mixin($bg-color, $icon-code);
+}
+
+.symbol-red {
+  $bg-color:      #e64759;
+  $icon-code:     "\e104";
+  @include symbol-mixin($bg-color, $icon-code);
+}
+
+.symbol-brown {
+  $bg-color:    #7964ca;
+  $icon-code:   "\e239";
+  @include symbol-mixin($bg-color, $icon-code);
+}
+
+.symbol-gold {
+  $bg-color:     #e4d836;
+  $icon-code:    "\e007";
+  @include symbol-mixin($bg-color, $icon-code);
+}
